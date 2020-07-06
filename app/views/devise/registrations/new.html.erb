@@ -1,0 +1,28 @@
+<div class="form-group">
+<h2>Rejestracja</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="form-group">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :haslo %>
+    <% if @minimum_password_length %>
+    <em>(minimum <%= @minimum_password_length %> znakow)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password", class:"form-control"%>
+  </div>
+
+
+
+  <div class="actions">
+    <%= f.submit "Wyslij", class: 'btn btn-primary' %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+</div>
