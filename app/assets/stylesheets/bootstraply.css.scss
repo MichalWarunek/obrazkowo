@@ -1,10 +1,19 @@
+$magenta: darken(magenta, 20%);
+
 $jumbotron-bg: lighten(black, 20%);
 $navbar-default-bg: red;
 $body-bg: lighten(black, 10%);
 $body-color: white;
 $input-color: white;
 $input-bg: black;
-$card-bg: lighten(black, 20%);
+$card-bg: black;
+$pagination-active-bg: black;
+$pagination-border-color: $magenta;
+$pagination-active-border-color: $magenta;
+$pagination-disabled-border-color: $magenta;
+$pagination-bg: lighten(black, 20%);
+$pagination-disabled-bg: lighten(black, 20%);
+$pagination-color: white;
 
 
 
@@ -15,7 +24,17 @@ $card-bg: lighten(black, 20%);
   text-align: center;
 }
 
-.pin-buttons {
+.buttons-center {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
+.btn-primary {
+  background-color: black;
+  border-color: $magenta;
+}
+
+.img-thumbnail {
+  border: 1px solid $magenta;
+}
+
+
