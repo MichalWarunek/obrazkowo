@@ -1,9 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 <div class="card col-md-4 offset-md-4">
-  <div class="card-body img-thumbnail">
+
     <%= image_tag @pin.image.url(:medium) %><br/>
-  </div>
+
   <div class="card-body center">
     <%= @pin.description %><br/>
     <br/><strong>Autor: <%= @pin.user.name %></strong><br/>
