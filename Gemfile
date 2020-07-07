@@ -12,6 +12,11 @@ gem 'jbuilder', '~> 2.7'
 gem 'devise'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'paperclip'
+gem 'aws-sdk', '~> 2.1.16'
+gem 'will_paginate', '~> 3.1.7'
+gem 'will_paginate-bootstrap4'
+gem 'jquery-turbolinks'
+gem 'masonry-rails', '~> 0.2.4'
 
 group :development, :test do
   gem 'sqlite3'

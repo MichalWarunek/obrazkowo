@@ -10,3 +10,12 @@ $card-bg: lighten(black, 20%);
 
 
 @import "bootstrap/scss/bootstrap";
+
+.center {
+  text-align: center;
+}
+
+.pin-buttons {
+  display: flex;
+  justify-content: space-between;
+}
