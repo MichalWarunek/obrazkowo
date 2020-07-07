@@ -1,0 +1,12 @@
+<div class="card">
+  <div class="card-header">
+    <h2>Nowy Pin</h2>
+
+
+    <%= render 'form', pin: @pin %>
+
+    <div class="card-footer buttons-center">
+      <%= link_to 'Cofnij', pins_path, class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<% @pins.each do |pin| %>
+  <div class="card col-md-4 offset-md-4">
+
+    <div class="card-body img-thumbnail">
+      <%= link_to image_tag(pin.image.url(:medium)), pin %><br/>
+    </div>
+    <div class="card-body center">
+      <%= pin.description %><br/>
+      <br /><strong>Autor: <%= pin.user.name if pin.user %></strong>
+    </div>
+
+    <% if pin.user == current_user %>
+      <div class="card-footer buttons-center">
+        <%= link_to 'Edytuj', edit_pin_path(pin), class: "btn btn-primary" %><br/>
+        <%= link_to 'Usuń', pin, method: :delete, data: {confirm: 'Are you sure?'}, class: "btn btn-primary" %><br/>
+      </div>
+    <% end %>
+  </div>
+
+  <br/>
+<% end %>
+
+<br>
+
+<div class="buttons-center">
+  <%= will_paginate @pins, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %>
+</div>
+
+
