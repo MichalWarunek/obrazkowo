@@ -1,5 +1,12 @@
-$jumbotron-bg: darken(white, 20%);
-$navbar-default-bg: yellow;
-$body-bg: darken(white, 10%);
+$jumbotron-bg: lighten(black, 20%);
+$navbar-default-bg: red;
+$body-bg: lighten(black, 10%);
+$body-color: white;
+$input-color: white;
+$input-bg: black;
+$card-bg: lighten(black, 20%);
+
+
+
 
 @import "bootstrap/scss/bootstrap";
